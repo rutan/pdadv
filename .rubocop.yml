@@ -1,0 +1,87 @@
+AllCops:
+  Exclude:
+    - tmp/**/*
+    - vendor/**/*
+  TargetRubyVersion: 2.5
+  DisplayCopNames: true
+
+# use japanese :)
+Style/AsciiComments:
+  Enabled: false
+
+# use method chain ( avoid use `end.compact` )
+#
+#   hoge.map { |item|
+#     item.piyo
+#   }.compact
+Style/BlockDelimiters:
+  Enabled: false
+
+# rubocop v.0.51.0 is bugging...
+#
+#  def tweet(hash_tag: '#twitter')`
+#    ...
+#  end
+Style/CommentedKeyword:
+  Enabled: false
+
+# no document
+Style/Documentation:
+  Enabled: false
+
+# use `!!hoge`
+Style/DoubleNegation:
+  Enabled: false
+
+# empty case is useful
+#
+#  case
+#  when user.admin?
+#    ...
+#  when user.active?
+#    ...
+#  else
+#    ...
+#  end
+Style/EmptyCaseCondition:
+  Enabled: false
+
+# my preference :)
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+# use `-> {}` syntax
+Style/Lambda:
+  Enabled: false
+
+# see Style/BlockDelimiters
+Style/MultilineBlockChain:
+  Enabled: false
+
+# I feel `.zero?` difficult to understand...
+Style/NumericPredicate:
+  Enabled: false
+
+# %w[a b c] or %i[a b c] ?
+Style/SymbolArray:
+  Enabled: false
+
+# incompatible DSL
+Layout/EmptyLinesAroundArguments:
+  Enabled: false
+
+# incompatible DSL
+Metrics/BlockLength:
+  Enabled: false
+
+# :)
+Metrics/ClassLength:
+  Enabled: false
+
+# :)
+Metrics/LineLength:
+  Max: 120
+
+# :)
+Metrics/MethodLength:
+  Max: 25
