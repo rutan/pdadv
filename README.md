@@ -4,6 +4,13 @@
 
 *It's a joke framework :)*
 
+## demo
+
+- play on browser
+    - https://niconare.nicovideo.jp/watch/kn3335
+- scenario file
+    - https://github.com/rutan/pdadv_demo_quest
+
 ## Installation
 
 ```bash
